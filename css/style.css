@@ -1,226 +1,230 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 
-body{
-  font-family: arial;
-}
+		html, body {
+		  margin: 0 10px;
+		  scroll-behavior: smooth;
+		}
+		.ui.form textarea:not([rows]) {
+			font-family: none;
+			font-weight: 600;
+			font-size: 1em !important;
+		}
+		
+		
+		.ui.form .fields {
+			border-bottom: 2px solid #000000;
+			padding-bottom: 10px;
+		}
+		
+		.ui.form input:not([number]){
+			width: 50px;
+			padding: 1px 0 1px 5px;
+			margin-bottom:5px;
+		}
+		
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  width: 900px;
-}
+		.bottom-divider {
+			border-bottom: 2px solid #000000;
+			padding-bottom: 20px;
+		}
+		
+		.file-input-entry {
+			margin-bottom: 10px;
+		}
+		
+		.ui.form select {
+			width: 80%;
+			}
+			
+		td {
+			vertical-align: top;
+			padding-right:50px;
+			width:50%;
+			}
 
-.section {
-  margin: 10px 0;
-}
+	
+		* {
+			margin: 0;
+			padding: 0;
+		}
 
-.bottom-divider {
-  border-bottom: 2px solid #000000;
-  padding-bottom: 20px;
-}
+		body{
+			font-family: arial;
+		}
 
-.sub-section {
-  clear: both;
-  margin-bottom: 1px;
-}
+		.section {
+			margin: 10px 0;
+		}
 
-.section,
-.sub-section {
-  width: 100%;
-}
+		.sub-section {
+			clear: both;
+			margin-bottom: 1px;
+		}
 
-.column {
-  float: left;
-}
+		.section,
+		.sub-section {
+			width: 100%;
+		}
 
-.column-center {
-  min-width: 160px;
-  text-align: center;
-}
+		.column {
+			float: left;
+		}
 
-.column-right {
-  float: right;
-}
+		.column-center {
+			min-width: 160px;
+			text-align: center;
+		}
 
-.sub-section-title {
-  margin: 0 0 10px;
-}
+		.column-right {
+			float: right;
+		}
 
-p {
-  margin: 20px 0;
-}
+		.sub-section-title {
+			margin: 0 0 10px;
+		}
 
-.table {
-  display: table;
-  margin: 10px 0 0;
-  width: 100%;
-}
+		p {
+			margin: 20px 0;
+		}
 
-.table-row {
-  display: table-row;
-  width: 100%;
-}
+		.table {
+			display: table;
+			margin: 10px 0 0;
+			width: 100%;
+		}
 
-.table-cell {
-  display: table-cell;
-  padding: 5px 0;
-}
+		
+		.table-row {
+			display: table-row;
+			width: 100%;
+		}
 
-.table-cell:first-child {
-  width: 30%;
-}
+		.table-cell {
+			display: table-cell;
+			padding: 5px 0;
+		}
 
-.table-cell:last-child {
-  width: 70%;
-}
+		.table-cell:first-child {
+			width: 17%;
+		}
 
-.table-cell:first-child label {
-  font-weight: bold;
-}
+		.table-cell:last-child {
+			width: 70%;
+		}
 
-.table-cell:last-child label {
-  margin-right: 10px;
-}
+		.table-cell:first-child label {
+			font-weight: bold;
+		}
 
-.nested-table {
-  margin: 0;
-}
+		.table-cell:last-child label {
+			margin-right: 10px;
+		}
 
-.nested-table .table-cell {
-  color: #666;
-  font-size: .9em;
-  width: 200px;
-}
+		.nested-table {
+			margin: 0;
+		}
 
-#format-caption-container div {
-  color: #505050;
-  display: none;
-  font-size: .9em;
-  line-height: 1.4em;
-  padding: 10px 0 15px;
-  width: 100%;
-}
+		.nested-table .table-cell {
+			color: #666;
+			font-size: .9em;
+			width: 200px;
+		}
 
-.upload-note {
-  max-width: 300px;
-}
+		#format-caption-container div {
+			color: #a19e08;
+			display: none;
+			font-size: .9em;
+			line-height: 1.4em;
+			padding: 10px 0 15px;
+			width: 100%;
+		}
 
-.byte-input {
-  min-height: 160px;
-  min-width: 360px;
-}
+		.byte-input {
+			min-height: 160px;
+			min-width: 360px;
+		}
 
-.code-output {
-  height: 200px;
-  width: 100%;
-}
+		.code-output {
+			height: 200px;
+			width: 100%;
+			margin-top:10px
+		}
 
-.note {
-  color: #666666;
-  font-size: .9em;
-  line-height: 1.4em;
-  margin: 3px 0;
-}
+		.note {
+			color: #666666;
+			font-size: .9em;
+			line-height: 1.4em;
+			margin: 3px 0;
+		}
 
-.file-input-entry {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
 
-button,
-input[type="file"] {
-  background: #00CB99;
-  border-radius: 3px;
-  border: none;
-  color: #fff;
-  font-size: .9em;
-  font-weight: bold;
-  margin: 10px 0 0 0;
-  padding: 4px 8px;
-}
 
-input[type="file"] {
-  font-size: 1.0em;
-  padding: 6px 20px;
-}
+		.ui.tiny.red.button {
+			margin: 0 0 0 10px;
+			padding: 4px 6px;
+			font-size: unset;
+		}
 
-.generate-button {
-  margin: 40px 0 20px;
-}
+		.file-info {
+			max-width: 300px;
+			white-space: pre;
+		}
 
-.remove-button {
-  margin: 0 0 0 10px;
-  padding: 1px 4px;
-}
 
-.file-info {
-  color: #505050;
-  font-size: .7em;
-  margin-left: 20px;
-  max-width: 300px;
-  white-space: pre;
-}
+		.glyph-input {
+			width: 85px;
+			margin-left: 10px;
+			padding-left: 5px;
+		}
+		
 
-.size-input{
-  width: 45px;
-}
+		#image-size-settings {
+			list-style-type: none;
+		}
 
-.glyph-input {
-  width: 80px;
-  margin-left: 10px;
-}
+		#image-size-settings li {
+			margin: 4px 0;
+		}
 
-#image-size-settings {
-  list-style-type: none;
-}
+		#images-canvas-container canvas {
+			border: 2px solid red;
+			/* margin: 10px 15px; */
+		}
 
-#image-size-settings li {
-  margin: 4px 0;
-}
+		#images-canvas-container {
+			align-items: flex-start;
+			display: flex;
+			flex-wrap: wrap;
+		}
 
-#images-canvas-container canvas {
-  border: 3px solid #88DAC5;
-  margin: 10px 15px;
-}
+		#arduino-identifier,
+		#adafruit-gfx-settings,
+		#all-same-size {
+			display: none;
+		}
 
-#images-canvas-container {
-  align-items: flex-start;
-  display: flex;
-  flex-wrap: wrap;
-}
+		.msg {
+			font-size: 1.2em;
+		}
 
-#arduino-identifier,
-#adafruit-gfx-settings,
-#all-same-size {
-  display: none;
-}
+		.error-msg {
+			color: #ff0000;
+			display: none;
+		}
 
-.msg {
-  font-size: 1.2em;
-}
-
-.error-msg {
-  color: #ff0000;
-  display: none;
-}
-
-h1{
-  padding: 10px;
-  color: white;
-  background-color: #00cb99;
-}
-
-.sp-block {
-  border: 1px solid rgb(65, 65, 65);
-  padding: .5rem;
-  border-radius: 1rem;
-}
-.sp-btn {
-  display: block;
-  margin-top: .5rem;
-}
+		h1{
+			padding: 10px;
+			color: white;
+			background-color: #00cb99;
+		}
+		
+		.ui.labeled.input>.label:not(.corner) {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		
+		.canvasBag {
+			margin: 0 10px 10px 0;
+			border: 2px solid green;
+			padding: 10px;
+			background-color: black;
+		}
